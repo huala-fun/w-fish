@@ -90,3 +90,18 @@
     transform: scale(1);
   }
 }
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-out; /* 这里的0.5秒是淡出效果的持续时间，可以根据需要调整 */
+}
