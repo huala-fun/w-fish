@@ -70,17 +70,18 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-0  select-none ">
       <div className="flex">赛博木鱼</div>
       <div className="flex justify-center items-center flex-col">
-        <div className="text-[96px]">{counter}</div>
+        <div className="text-[96px] animate__animated animate__swing">{counter}</div>
         <span className=" mt-[-2rem]">功德</span>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col">
           {tips.map((tip, index) => (
-            <div className="fade-out" key={index}>
+            <div className="animate__animated  animate__fadeOutUp" key={index}>
               {tip}
             </div>
           ))}
         </div>
+
         <Image
           onClick={triggerMuyuHit}
           src={"/muyu.svg"}
