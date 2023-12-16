@@ -67,7 +67,8 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24  select-none ">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-0  select-none ">
+      <div className="flex">赛博木鱼</div>
       <div className="flex justify-center items-center flex-col">
         <div className="text-[96px]">{counter}</div>
         <span className=" mt-[-2rem]">功德</span>
